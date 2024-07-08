@@ -18,8 +18,8 @@ false === (847 == '847');
 
 console.log(false || (true && false)); //FALSE
 console.log(true || (1 + 2)); //TRUE
-console.log((1 + 2) || true); //any non zero number is considered as TRUE
-console.log(true && (1 + 2)); //any non zero number is considered as TRUE
+console.log((1 + 2) || true); //TRUE
+console.log(true && (1 + 2)); //TRUE
 console.log(false && (1 + 2)); // FALSE
 console.log((1 + 2) && true); // TRUE
 console.log((32 * 4) >= 129); // FALSE
@@ -31,18 +31,33 @@ console.log((!true || (!(100 / 5) === 20) || ((328 / 4) === 82)) || false);// TR
 
 
 
-
-
 /*Question 2
-Write a function, evenOrOdd, that determines whether its argument is an even number. If it is, the function should log 'even' to the console; otherwise, it should log 'odd'. For now, assume that the argument is always an integer.
+Write a function, evenOrOdd, that determines whether its argument is an even number. 
+If it is, the function should log 'even' to the console; otherwise, it should log 'odd'.
+For now, assume that the argument is always an integer.
 Hint 1
-A number is even if you can divide it by two with no remainder. For instance, 4 is even since 4 divided by 2 has no remainder. Conversely, 3 is odd since 3 divided by 2 has a remainder of 1.
+A number is even if you can divide it by two with no remainder. For instance,
+4 is even since 4 divided by 2 has no remainder. Conversely, 
+3 is odd since 3 divided by 2 has a remainder of 1.
 
 Hint 2
 You can use the % remainder operator shown in The Basics session to determine the remainder.
 */
 
+function evenOrOdd(number) {
+if (number % 2 === 0) {
+console.log('even');
+} 
+else {
+console.log('odd');
+}
+}
+evenOrOdd(100)
+evenOrOdd(101)
+evenOrOdd(102)
+evenOrOdd(103)
 
+ 
 /*Question 3
 Let's improve our previous implementation of evenOrOdd. Add a validation check to ensure that the argument is an integer. If it isn't, the function should issue an error message and return.
 Hint 1
