@@ -16,6 +16,19 @@ false === (847 == '847');
 (!true || (!(100 / 5) === 20) || ((328 / 4) === 82)) || false;
 |*/
 
+console.log(false || (true && false)); //FALSE
+console.log(true || (1 + 2)); //TRUE
+console.log((1 + 2) || true); //any non zero number is considered as TRUE
+console.log(true && (1 + 2)); //any non zero number is considered as TRUE
+console.log(false && (1 + 2)); // FALSE
+console.log((1 + 2) && true); // TRUE
+console.log((32 * 4) >= 129); // FALSE
+console.log(false !== !true); // FALSE
+console.log(true === 4); // FALSE
+console.log(false === (847 === '847')); // TRUE
+console.log(false === (847 == '847')); // FALSE
+console.log((!true || (!(100 / 5) === 20) || ((328 / 4) === 82)) || false);// TRUE
+
 
 
 
