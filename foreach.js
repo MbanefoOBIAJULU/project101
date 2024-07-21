@@ -47,9 +47,23 @@ while (counter <= 10) {
   console.log(counter);
   counter = counter + 1;
 }
-*/
+
 let counter = 1;
 while (counter <= 10) {
   console.log(counter);
   counter++;
+}*/
+
+
+let names = ['Emeka', 'Obi', 'Ify', 'Pete', 'Victor'];
+let upperNames = [];
+let index = 0;
+
+while (index < names.length) {
+  let upperCaseName = names[index].toUpperCase();
+  upperNames.push(upperCaseName);
+  index += 1;
 }
+
+console.log(upperNames); // => ['CHRIS', 'KEVIN', 'NAVEED', 'PETE', 'VICTOR']
+
