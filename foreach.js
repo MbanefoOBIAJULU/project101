@@ -39,11 +39,17 @@ console.log("Start funcC");
 console.log("End funcC");
 }
             
-funcA();*/
+funcA();
             
 
 let counter = 1;
 while (counter <= 10) {
   console.log(counter);
   counter = counter + 1;
+}
+*/
+let counter = 1;
+while (counter <= 10) {
+  console.log(counter);
+  counter++;
 }
