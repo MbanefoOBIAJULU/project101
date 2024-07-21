@@ -233,7 +233,7 @@ console.log(null ?? false);  //false
 console.log(undefined ?? (1 + 2)); // 3
 console.log((1 + 2) ?? null);   // 3
 console.log(null ?? undefined);  //undefined
-console.log(undefined ?? null);  // null
+console.log(undefined ?? null);  // null.
 
 
 /*Question 10
