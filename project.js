@@ -156,13 +156,40 @@ console.log('Empty');
 isArrayEmpty([]);*/
 
 
-/*Question 7
-Write a function that takes a string as an argument and returns an all-caps version of the string when the string is longer than 10 characters. Otherwise, it should return the original string. Example: change 'hello world' to 'HELLO WORLD', but don't change 'goodbye'.
+function isArrayEmpty(arr) {
+if (arr) {
+console.log('Not Empty');
+} else {
+console.log('Empty');
+}
+}
+isArrayEmpty([]); // NOT EMPTY
 
+
+/*Question 7
+Write a function that takes a string as an argument 
+and returns an all-caps version of the string when 
+the string is longer than 10 characters. Otherwise, 
+it should return the original string. Example:
+ change 'hello world' to 'HELLO WORLD', but don't change 'goodbye'.*/
+
+ 
+ function allCaps(word) {
+if (word.length > 10) {
+return word.toUpperCase()
+} else{
+    return word
+}
+}
+console.log(allCaps('hello world'))
+console.log(allCaps('goodbye'))
+console.log(allCaps('hello'))
 
 
 /* Question 8
-Write a function that logs whether an integer is between 0 and 50 (inclusive), between 51 and 100 (inclusive), greater than 100, or less than 0.
+Write a function that logs whether an integer is 
+between 0 and 50 (inclusive), between 51 and 100
+ (inclusive), greater than 100, or less than 0.
 
 
 numberRange(25);

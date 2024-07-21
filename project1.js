@@ -1,66 +1,30 @@
-/*Refactor this statement to use an if statement instead.
-//return foo() ? 'bar' : git();
-if (foo()) {
-    return "bar";
-} else {
-return (git); 
-}
+/*Write a function that takes a string as
+ an argument and returns an all-caps version 
+ of the string when the string is longer than 
+ 10 characters. Otherwise, it should return the 
+ original string. Example: change 'hello world' 
+ to 'HELLO WORLD', but don't change 'goodbye'.*/
 
-
-function down(){ 
-if (foo())
-    return 'bar';
-else{
-    return git();
+ function allCaps(word) {
+if (word.length > 10) {
+return word.toUpperCase()
+} else{
+    return word
 }
 }
-console.log(down());
+console.log(allCaps('hello world'))
+console.log(allCaps('goodbye'))
+console.log(allCaps('hello'))
 
-
-/*function foo() {
-    // This function returns a boolean value
-    return true;  // or false
-}
-
-function git() {
-    // This function returns a string
-    return 'git result';
-}
-
-function example() {
-    if (foo()) {
-        return 'bar';
+/*function convertString(str) {
+    if (str.length > 10) {
+        return str.toUpperCase();
     } else {
-        return git();
+        return str;
     }
 }
-
-)Testing the function
-console.log(example()); // Outputs: 'bar' if foo() returns true, 'git result' if foo() returns false
-*/ 
-
-function example(foo) {
-    if (foo) {
-console.log('bar');
-    } else 
-     {
-console.log('git');
-    }
-}
-example()
 
 // Testing the function
-//console.log(example());
-
-
-//What does this code output to the console?
-
-/*
-function isArrayEmpty(arr) {
-if (arr) {
-console.log('Not Empty');
-} else {
-console.log('Empty');
-}
-}
-isArrayEmpty([]);*/
+console.log(convertString('hello world')); // Outputs: 'HELLO WORLD'
+console.log(convertString('goodbye')); // Outputs: 'goodbye'
+*/
