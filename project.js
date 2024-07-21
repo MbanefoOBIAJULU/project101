@@ -130,6 +130,17 @@ Refactor this statement to use an if statement instead.
 return foo() ? 'bar' : git();
 */
 
+function example(foo) {
+if (foo) {
+console.log('bar');
+} else 
+{
+console.log('git');
+}
+}
+example(true)
+example()
+
 
 /* Question 6
 What does this code output to the console?

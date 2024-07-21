@@ -1,37 +1,66 @@
+/*Refactor this statement to use an if statement instead.
+//return foo() ? 'bar' : git();
+if (foo()) {
+    return "bar";
+} else {
+return (git); 
+}
 
-/*What does the following code log to the console, and why?
 
-function barCodeScanner(serial) {
-switch (serial) {
-case '123':
-console.log('Product1');
-case '113':
-console.log('Product2');
-case '142':
-console.log('Product3');
-Default:
-console.log('Product not found!');
+function down(){ 
+if (foo())
+    return 'bar';
+else{
+    return git();
 }
 }
-barCodeScanner('113');*/
+console.log(down());
 
-function barCodeScanner(serial) {
-switch (serial) {
-case '123':
-console.log('Product1');
-case '113':
-console.log('Product2');
-case '142':
-console.log('Product3');
-default:
-console.log('Product not found!');
+
+/*function foo() {
+    // This function returns a boolean value
+    return true;  // or false
+}
+
+function git() {
+    // This function returns a string
+    return 'git result';
+}
+
+function example() {
+    if (foo()) {
+        return 'bar';
+    } else {
+        return git();
+    }
+}
+
+)Testing the function
+console.log(example()); // Outputs: 'bar' if foo() returns true, 'git result' if foo() returns false
+*/ 
+
+function example(foo) {
+    if (foo) {
+console.log('bar');
+    } else 
+     {
+console.log('git');
+    }
+}
+example()
+
+// Testing the function
+//console.log(example());
+
+
+//What does this code output to the console?
+
+/*
+function isArrayEmpty(arr) {
+if (arr) {
+console.log('Not Empty');
+} else {
+console.log('Empty');
 }
 }
-barCodeScanner('113');
-/* the following code logs the following to the console
-'Project2' 'Project3' and 'product not found'; 
-The switch statement checks for the value of serial
-aginst the arguments labelled case.
-once a match is found, it logs it to the console but continues 
-to the next case label since there is no break statement after each case. 
-*/
+isArrayEmpty([]);*/
