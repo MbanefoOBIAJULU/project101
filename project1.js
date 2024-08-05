@@ -8,11 +8,18 @@ console.log(ageCollins/ 2, ageChike - 10, ageMarculla + 50);
  
 let x, y;
 x = y = 25 - 10 + 5;
-console.log(x, y);*/
+console.log(x, y);
 
 const firstName = 'Obiajulu';
 const job = 'teacher';
 const birthYear = 1992;
 const year = 2024;
 const obiajulu = 'i' +' ' + 'am' +' ' + firstName +' ' + 'a' +' ' + (year - birthYear) +' ' + 'years' + ' ' + 'old' +' '+ job;
-console.log(obiajulu);
+console.log(obiajulu);*/
+
+const firstName = 'Obiajulu';
+const job = 'teacher';
+const birthYear = 1992;
+const year = 2024;
+const obiajulu = `i am ${firstName}, a ${year - birthYear} year old ${job} !  `
+console.log(obiajulu)
