@@ -15,11 +15,13 @@ const job = 'teacher';
 const birthYear = 1992;
 const year = 2024;
 const obiajulu = 'i' +' ' + 'am' +' ' + firstName +' ' + 'a' +' ' + (year - birthYear) +' ' + 'years' + ' ' + 'old' +' '+ job;
-console.log(obiajulu);*/
+console.log(obiajulu);
 
 const firstName = 'Obiajulu';
 const job = 'teacher';
 const birthYear = 1992;
 const year = 2024;
 const obiajulu = `i am ${firstName}, a ${year - birthYear} year old ${job} !  `
-console.log(obiajulu)
+console.log(obiajulu)*/
+
+console.log(`i am obiajulu a 32 years old teacher !`);
